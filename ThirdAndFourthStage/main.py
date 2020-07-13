@@ -35,7 +35,7 @@ class DataCollectorFactory:
 
 
 def init_config():
-    json_object = json.load(open("./SocialMediaCollector/config.json"))
+    json_object = json.load(open("./config.json"))
 
     config = Config(json_object["dataset_dir"], json_object["dump_location"], json_object["tweet_keys_file"],
                     int(json_object["num_process"]))
